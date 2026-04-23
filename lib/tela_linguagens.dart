@@ -127,7 +127,34 @@ class TelaLinguagens extends StatelessWidget {
                   ),
                 ),
               ]
-          )
+          ),
+
+          Row(
+              children: [
+                const SizedBox(width: 70),
+                ElevatedButton(
+                  child: Text(
+                    '5',
+                    style: GoogleFonts.irishGrover(
+                        fontSize: 35),
+                  ),
+                  onPressed: () {
+                    print("Botão clicado!");
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFFF4C6E6),
+                    foregroundColor: Color(0xFFC97EB2),
+                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 21),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+
+                    elevation: 8,
+                  ),
+                ),
+              ]
+          ),
+
         ]
       ),
     );
