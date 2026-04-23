@@ -18,12 +18,117 @@ class TelaLinguagens extends StatelessWidget {
                 'Linguagens!',
                 style: GoogleFonts.chewy(
                   fontSize: 55,
-                  color: Colors.white,
+                  color: Colors.black,
+
                 ),
               ),
             ),
           ),
-        ],
+          Row(
+            children: [
+              const SizedBox(width: 70),
+          ElevatedButton(
+            child: Text(
+              '1',
+              style: GoogleFonts.irishGrover(
+                fontSize: 35),
+            ),
+            onPressed: () {
+              print("Botão clicado!");
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Color(0xFFF4C6E6),
+              foregroundColor: Color(0xFFC97EB2),
+              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+
+              elevation: 8,
+            ),
+          ),
+
+            ],
+
+          ),
+
+          Row(
+           children: [
+             const SizedBox(width: 230),
+           ElevatedButton(
+             child: Text(
+               '2',
+               style: GoogleFonts.irishGrover(
+                   fontSize: 35),
+             ),
+             onPressed: () {
+               print("Botão clicado!");
+             },
+             style: ElevatedButton.styleFrom(
+               backgroundColor: Color(0xFFF4C6E6),
+               foregroundColor: Color(0xFFC97EB2),
+               padding: EdgeInsets.symmetric(horizontal: 35, vertical: 21),
+               shape: RoundedRectangleBorder(
+                 borderRadius: BorderRadius.circular(20),
+               ),
+
+               elevation: 8,
+             ),
+           ),
+           ]
+          ),
+
+          Row(
+              children: [
+                const SizedBox(width: 70),
+                ElevatedButton(
+                  child: Text(
+                    '3',
+                    style: GoogleFonts.irishGrover(
+                        fontSize: 35),
+                  ),
+                  onPressed: () {
+                    print("Botão clicado!");
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFFF4C6E6),
+                    foregroundColor: Color(0xFFC97EB2),
+                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 21),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+
+                    elevation: 8,
+                  ),
+                ),
+              ]
+          ),
+          Row(
+              children: [
+                const SizedBox(width: 230),
+                ElevatedButton(
+                  child: Text(
+                    '4',
+                    style: GoogleFonts.irishGrover(
+                        fontSize: 35),
+                  ),
+                  onPressed: () {
+                    print("Botão clicado!");
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFFF4C6E6),
+                    foregroundColor: Color(0xFFC97EB2),
+                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 21),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+
+                    elevation: 8,
+                  ),
+                ),
+              ]
+          )
+        ]
       ),
     );
   }
