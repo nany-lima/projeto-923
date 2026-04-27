@@ -19,18 +19,16 @@ class TelaLinguagens extends StatelessWidget {
              child: Container(
                padding: const EdgeInsets.symmetric(
                    horizontal: 30, vertical: 10),
-               alignment: Alignment.centerLeft, //"Level Up" a esquerda
+               alignment: Alignment.centerLeft, 
 
 
 
 
                decoration: BoxDecoration(
                  color: const Color(0xFFFD79D5),
-                 // Cor do fundo do retângulo
                  borderRadius: BorderRadius.circular(5),
-                 // Deixa as pontas arredondadas
                  border: Border.all(
-                   color: const Color(0xFFFDD6F1), // Contorno verde claro
+                   color: const Color(0xFFFDD6F1), 
                    width: 3,
                  ),
                ),
@@ -46,19 +44,11 @@ class TelaLinguagens extends StatelessWidget {
          ),
          const SizedBox (height: 40),
 
-
-
-
-         //                   BOTÃO DE LINGUAGENS
-
-
-
-
          Padding(
            padding: const EdgeInsets.symmetric(horizontal: 30.0),
            child: SizedBox(
-             width: double.infinity, // Permite definir a largura da tela.
-             height: 100, // Largura do botão
+             width: double.infinity, 
+             height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
                  print("Clicou em Português");
@@ -69,7 +59,7 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), // Cor do botão
+                 backgroundColor: Color(0xFFFF59C8), 
                  side: const BorderSide(
                    color: Colors.white70,
                    width: 3.0,
@@ -82,12 +72,12 @@ class TelaLinguagens extends StatelessWidget {
            ),
          ),
          const SizedBox(height: 20),
-         //BOTÃO INGLES
+         
          Padding(
            padding: const EdgeInsets.symmetric(horizontal: 30.0),
            child: SizedBox(
-             width: double.infinity, // Permite definir a largura da tela.
-             height: 100, // Largura do botão
+             width: double.infinity, 
+             height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
                  print("Clicou em Iglês");
@@ -98,7 +88,7 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), // Cor do botão
+                 backgroundColor: Color(0xFFFF59C8), 
                  side: const BorderSide(
                    color: Colors.white70,
                    width: 3.0,
@@ -112,15 +102,11 @@ class TelaLinguagens extends StatelessWidget {
          ),
          const SizedBox(height: 20),
 
-
-
-
-         // BOTÃO ED>FISICA
          Padding(
            padding: const EdgeInsets.symmetric(horizontal: 30.0),
            child: SizedBox(
-             width: double.infinity, // Permite definir a largura da tela.
-             height: 100, // Largura do botão
+             width: double.infinity, 
+             height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
                  print("Clicou em Ed.Física");
@@ -131,7 +117,7 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), // Cor do botão
+                 backgroundColor: Color(0xFFFF59C8), 
                  side: const BorderSide(
                    color: Colors.white70,
                    width: 3.0,
@@ -144,12 +130,12 @@ class TelaLinguagens extends StatelessWidget {
            ),
          ),
          const SizedBox(height: 20),
-         //BOTÃO INGLES
+        
          Padding(
            padding: const EdgeInsets.symmetric(horizontal: 30.0),
            child: SizedBox(
-             width: double.infinity, // Permite definir a largura da tela.
-             height: 100, // Largura do botão
+             width: double.infinity, 
+             height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
                  print("Clicou em Artes");
@@ -160,7 +146,7 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), // Cor do botão
+                 backgroundColor: Color(0xFFFF59C8), 
                  side: const BorderSide(
                    color: Colors.white70,
                    width: 3.0,
