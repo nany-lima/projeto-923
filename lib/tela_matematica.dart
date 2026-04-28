@@ -13,171 +13,47 @@ class _telaMatematica extends State<TelaMatematica> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFDBB7),
-      body: Column(
-        children: [
-          Align(
-            alignment: Alignment.topCenter,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 50.0),
-              child: Text(
-                'Matemática!',
-                style: GoogleFonts.chewy(
-                  fontSize: 55,
-                  color: Colors.black,
-                ),
-              ),
+      appBar: AppBar(
+          title: Text(
+            'Level Up!',
+            style: GoogleFonts.chewy(
+                fontSize: 40,
+                color: Colors.white
             ),
           ),
-
-        Row(
-            children: [
-              const SizedBox(width: 70),
-              ElevatedButton(
-                child: Text(
-                    '1',
-                    style: GoogleFonts.irishGrover(
-                      fontSize: 35,
-                    )
+          centerTitle: false,
+          backgroundColor: const Color(0xFFFFA477)
+      ),
+      body: Center(
+      child: Column(
+        children: [
+              const SizedBox(height: 35),
+              ElevatedButton.icon(
+                icon: const Icon(Icons.calculate_sharp, color: Colors.white),
+                label: const Text(
+                  'Matemática',
+                  style: TextStyle(fontSize: 25, color: Colors.white),
                 ),
-
                 onPressed: () {
                   print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFFFB895),
-                  foregroundColor: Color(0xFFA77C57),
-                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                  backgroundColor: Color(0xFFFFA477),
+                  foregroundColor: Colors.white,
+                  side: const BorderSide(
+                    color: Colors.white,
+                    width: 3.0,
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 80, vertical: 30),
 
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-
-                  elevation: 8,
-                ),
-              )
-
-            ],
-          ),
-
-          Row(
-            children:[
-              const SizedBox(width: 240),
-              ElevatedButton(
-                child: Text(
-                    '2',
-                    style: GoogleFonts.irishGrover(
-                      fontSize: 35,
-                    )
-                ),
-
-                onPressed: () {
-                  print("Botão clicado!");
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFFFB895),
-                  foregroundColor: Color(0xFFA77C57),
-                  padding: EdgeInsets.symmetric(horizontal: 35, vertical: 20),
-
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-
-                  elevation: 8,
                 ),
               ),
-            ]
-          ),
-
-          Row(
-              children:[
-                const SizedBox(width: 75),
-                ElevatedButton(
-                  child: Text(
-                      '3',
-                      style: GoogleFonts.irishGrover(
-                        fontSize: 35,
-                      )
-                  ),
-
-                  onPressed: () {
-                    print("Botão clicado!");
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFFFB895),
-                    foregroundColor: Color(0xFFA77C57),
-                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 20),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-
-                    elevation: 8,
-                  ),
-                ),
-              ]
-          ),
-
-          Row(
-              children:[
-                const SizedBox(width: 240),
-                ElevatedButton(
-                  child: Text(
-                      '4',
-                      style: GoogleFonts.irishGrover(
-                        fontSize: 35,
-                      )
-                  ),
-
-                  onPressed: () {
-                    print("Botão clicado!");
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFFFB895),
-                    foregroundColor: Color(0xFFA77C57),
-                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 20),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-
-                    elevation: 8,
-                  ),
-                ),
-              ]
-          ),
-
-          Row(
-              children:[
-                const SizedBox(width: 75),
-                ElevatedButton(
-                  child: Text(
-                      '5',
-                      style: GoogleFonts.irishGrover(
-                        fontSize: 35,
-                      )
-                  ),
-
-                  onPressed: () {
-                    print("Botão clicado!");
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFFFB895),
-                    foregroundColor: Color(0xFFA77C57),
-                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 20),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-
-                    elevation: 8,
-                  ),
-                ),
-              ]
-          ),
-
         ],
       ),
-
+      )
     );
   }
 }
