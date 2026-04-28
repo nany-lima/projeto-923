@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class TelaLinguagens extends StatelessWidget {
  const TelaLinguagens({super.key});
-
 
  @override
  Widget build(BuildContext context) {
@@ -19,11 +17,7 @@ class TelaLinguagens extends StatelessWidget {
              child: Container(
                padding: const EdgeInsets.symmetric(
                    horizontal: 30, vertical: 10),
-               alignment: Alignment.centerLeft, 
-
-
-
-
+               alignment: Alignment.centerLeft,
                decoration: BoxDecoration(
                  color: const Color(0xFFFD79D5),
                  borderRadius: BorderRadius.circular(5),
@@ -51,9 +45,9 @@ class TelaLinguagens extends StatelessWidget {
              height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
-                 print("Clicou em Português");
+                 print("Você Clicou em Português");
                },
-               icon: const Icon(Icons.history_edu, color: Colors.white),
+               icon: const Icon(Icons.history_edu, color: Colors.white,  size: 30),
                label: const Text(
                  'Português',
                  style: TextStyle(fontSize: 25, color: Colors.white),
@@ -80,9 +74,9 @@ class TelaLinguagens extends StatelessWidget {
              height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
-                 print("Clicou em Iglês");
+                 print("Você Clicou em Iglês");
                },
-               icon: const Icon(Icons.public, color: Colors.white),
+               icon: const Icon(Icons.public, color: Colors.white,  size: 30),
                label: const Text(
                  'Inglês',
                  style: TextStyle(fontSize: 25, color: Colors.white),
@@ -109,9 +103,9 @@ class TelaLinguagens extends StatelessWidget {
              height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
-                 print("Clicou em Ed.Física");
+                 print("Você Clicou em Ed.Física");
                },
-               icon: const Icon(Icons.directions_run, color: Colors.white),
+               icon: const Icon(Icons.directions_run, color: Colors.white,  size: 30),
                label: const Text(
                  'Educação Física',
                  style: TextStyle(fontSize: 25, color: Colors.white),
@@ -138,9 +132,9 @@ class TelaLinguagens extends StatelessWidget {
              height: 100, 
              child: ElevatedButton.icon(
                onPressed: () {
-                 print("Clicou em Artes");
+                 print(" Você Clicou em Artes");
                },
-               icon: const Icon(Icons.palette, color: Colors.white),
+               icon: const Icon(Icons.palette, color: Colors.white,  size: 30),
                label: const Text(
                  'Artes',
                  style: TextStyle(fontSize: 25, color: Colors.white),
@@ -164,4 +158,3 @@ class TelaLinguagens extends StatelessWidget {
    );
  }
 }
-
