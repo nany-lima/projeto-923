@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'questoes_m.dart';
 
 class TelaMatematica extends StatefulWidget {
   const TelaMatematica({super.key});
@@ -13,23 +14,43 @@ class _telaMatematica extends State<TelaMatematica> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFDBB7),
-      appBar: AppBar(
-          title: Text(
-            'Level Up!',
-            style: GoogleFonts.chewy(
-                fontSize: 40,
-                color: Colors.white
-            ),
-          ),
-          centerTitle: false,
-          backgroundColor: const Color(0xFFFFA477)
-      ),
       body: Center(
       child: Column(
         children: [
-              const SizedBox(height: 35),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 14.0),
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 30, vertical: 10),
+                alignment: Alignment.centerLeft,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFFA477),
+                  borderRadius: BorderRadius.circular(5),
+                  border: Border.all(
+                    color: const Color(0xFFFFEDE4),
+                    width: 3,
+                  ),
+                ),
+                child: Text(
+                  'Level Up!',
+                  style: GoogleFonts.chewy(
+                    fontSize: 35,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+              const SizedBox(height: 40),
               ElevatedButton.icon(
-                icon: const Icon(Icons.calculate_sharp, color: Colors.white),
+                icon: const Icon(
+                    Icons.calculate,
+                    color: Colors.white,
+                    size: 30
+                ),
                 label: const Text(
                   'Matemática',
                   style: TextStyle(fontSize: 25, color: Colors.white),
@@ -41,11 +62,10 @@ class _telaMatematica extends State<TelaMatematica> {
                   backgroundColor: Color(0xFFFFA477),
                   foregroundColor: Colors.white,
                   side: const BorderSide(
-                    color: Colors.white,
+                    color: Colors.white70,
                     width: 3.0,
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 80, vertical: 30),
-
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
