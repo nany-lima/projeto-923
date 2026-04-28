@@ -156,8 +156,6 @@ class QuestoesHumanas extends StatelessWidget {
      ),
    );
  }
- // Função que organiza o visual de cada questão
-
 
  Widget itemQuestaoHumanas(String enunciado, List<String> opcoes) {
    return Padding(
@@ -170,7 +168,7 @@ class QuestoesHumanas extends StatelessWidget {
            style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.bold),
          ),
          const SizedBox(height: 12),
-         // Gera os botões automáticos e "travados"
+        
          for (var texto in opcoes)
            Padding(
              padding: const EdgeInsets.only(bottom: 6),
