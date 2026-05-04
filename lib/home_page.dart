@@ -14,7 +14,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int selectedIndex = 0;
-
   List pages = [
     const TelaInicial(),
     TelaLinguagens(),
@@ -28,7 +27,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: const Color(0xFFBDE0FE),
       body: pages[selectedIndex],
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         showUnselectedLabels: true,
@@ -49,7 +47,6 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
     );
-
   }
 }
 
@@ -58,25 +55,82 @@ class TelaInicial extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Align(
-          alignment: Alignment.topCenter,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 50.0),
-            child: Text(
-              'Level Up!',
-              style: GoogleFonts.chewy(
-                fontSize: 55,
-                color: Colors.white,
+    return SizedBox(
+      width: double.infinity,
+      child: Column(
+        children: [
+          Align(
+            alignment: Alignment.topRight,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 50.0, right: 25.0),
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                ),
+                child: IconButton(
+                  iconSize: 35,
+                  icon: const Icon(
+                    Icons.person,
+                    color: Color(0xFFBDE0FE),
+                  ),
+                  onPressed: () {
+                    print("Botão de Perfil clicado!");
+                  },
+                ),
               ),
             ),
           ),
-        ),
+          const Spacer(),
+          Text(
+            'Level Up!',
+            style: GoogleFonts.chewy(
+              fontSize: 65,
+              color: Colors.white,
+              shadows: const [
+                Shadow(
+                  offset: Offset(2, 2),
+                  blurRadius: 10,
+                  color: Colors.black12,
+                ),
+              ],
+            ),
+          ),
 
-      ],
+          const SizedBox(height: 10),
+          const Icon(
+            Icons.rocket_launch_rounded,
+            size: 100,
+            color: Colors.white,
+          ),
+
+          const SizedBox(height: 20),
+
+          Text(
+            'Rumo à nota 1000',
+            style: GoogleFonts.poppins(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+              letterSpacing: 1.2,
+            ),
+          ),
+
+          const SizedBox(height: 8),
+
+          Text(
+            'Utilize o menu abaixo para estudar',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.poppins(
+              fontSize: 16,
+              color: const Color(0XFF607D8B),
+              fontWeight: FontWeight.w400,
+              letterSpacing: 0.5,
+            ),
+          ),
+          const Spacer(flex: 2),
+        ],
+      ),
     );
   }
 }
-
-
