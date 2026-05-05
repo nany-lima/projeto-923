@@ -98,20 +98,50 @@ class _perfil extends State<Perfil> {
 
               ]
           ),
-          const SizedBox(height: 25),
-          Row(
-            children:[
-              const SizedBox(width: 60),
-              Text(
-                  'Sua pontuação!',
-                    style :GoogleFonts.inika(
-                      fontSize: 30,
-                      color: Colors.black
-                    )
-                ),
-             ]
+          const SizedBox(height: 30),
+          ElevatedButton(
+            child: Text(
+                'Editar perfil',
+                style: GoogleFonts.inika(
+                  fontSize: 20,
+                )
+            ),
+
+            onPressed: () {
+              print("Botão clicado!");
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Color(0xFF7F7F7F),
+              foregroundColor: Colors.black,
+              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
+
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 20),
+          Divider(
+            color: Colors.black,
+            thickness: 2,
+            indent: 10,
+            endIndent: 10,
+          ),
+          const SizedBox(height: 20),
+          Container(
+            width: 380,
+            height: 50,
+            color: Color(0xFFC0BFBF),
+            child:Center(child: Text(
+                'Pontuação Atual',
+                style :GoogleFonts.inika(
+                    fontSize: 30,
+                    color: Colors.black
+                )
+            ),
+            )
+          ),
+          const SizedBox(height: 20),
           Row(
             children: [
               const SizedBox(width: 32),
@@ -119,7 +149,7 @@ class _perfil extends State<Perfil> {
                 width: 160,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFDC4FF),
+                  color: Color(0xFFFDC4FF),
                   borderRadius: BorderRadius.circular(25),
                   border: Border.all(
                     color: Color(0xFFE487B9),
@@ -133,14 +163,14 @@ class _perfil extends State<Perfil> {
                     Text(
                       'Linguagens',
                       style: GoogleFonts.chewy(
-                          fontSize: 22,
+                          fontSize: 23,
                           color: Color(0xFFE468AA)
                       )
                     ),
 
                     Text(
-                        'X pontos',
-                        style: GoogleFonts.inika(
+                        '85 pontos',
+                        style: GoogleFonts.inter(
                             fontSize: 16,
                             color: Colors.black
                         )
@@ -153,7 +183,7 @@ class _perfil extends State<Perfil> {
                 width: 160,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDBAFF8),
+                  color: Color(0xFFDBAFF8),
                   borderRadius: BorderRadius.circular(25),
                   border: Border.all(
                     color: Color(0xFF9267AE),
@@ -167,14 +197,14 @@ class _perfil extends State<Perfil> {
                     Text(
                         'Humanas',
                         style: GoogleFonts.chewy(
-                            fontSize: 22,
+                            fontSize: 23,
                             color: Color(0xFF9267AE)
                         )
                     ),
 
                     Text(
-                        'X pontos',
-                        style: GoogleFonts.inika(
+                        '92 pontos',
+                        style: GoogleFonts.inter(
                             fontSize: 16,
                             color: Colors.black
                         )
@@ -209,14 +239,14 @@ class _perfil extends State<Perfil> {
                     Text(
                         'Matemática',
                         style: GoogleFonts.chewy(
-                            fontSize: 22,
+                            fontSize: 23,
                             color: Color(0xFF8B6747)
                         )
                     ),
 
                     Text(
-                        'X pontos',
-                        style: GoogleFonts.inika(
+                        '76 pontos',
+                        style: GoogleFonts.inter(
                             fontSize: 16,
                             color: Colors.black
                         )
@@ -243,14 +273,14 @@ class _perfil extends State<Perfil> {
                     Text(
                         'Ciências',
                         style: GoogleFonts.chewy(
-                            fontSize: 22,
+                            fontSize: 23,
                             color: Color(0xFF478B72)
                         )
                     ),
 
                     Text(
-                        'X pontos',
-                        style: GoogleFonts.inika(
+                        '70 pontos',
+                        style: GoogleFonts.inter(
                             fontSize: 16,
                             color: Colors.black
                         )
@@ -260,36 +290,12 @@ class _perfil extends State<Perfil> {
               )
             ],
           ),
-          const SizedBox(height: 35),
-          ElevatedButton(
-            child: Text(
-                'Editar perfil',
-                style: GoogleFonts.inika(
-                  fontSize: 25,
-                )
-            ),
-
-            onPressed: () {
-              print("Botão clicado!");
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF7F7F7F),
-              foregroundColor: Colors.black,
-              padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
-
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-
-              elevation: 8,
-            ),
-          ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 15),
           ElevatedButton(
             child: Text(
                 'Voltar',
                 style: GoogleFonts.inika(
-                  fontSize: 25,
+                  fontSize: 20,
                 )
             ),
 
@@ -299,21 +305,19 @@ class _perfil extends State<Perfil> {
             style: ElevatedButton.styleFrom(
               backgroundColor: Color(0xFF7F7F7F),
               foregroundColor: Colors.black,
-              padding: EdgeInsets.symmetric(horizontal: 90, vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 60, vertical: 5),
 
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-
-              elevation: 8,
             ),
           ),
-
+          const SizedBox(height: 30)
         ]
       ),
 
           Positioned(
-            bottom: 640,
+            bottom: 685,
             right: 115,
             child: ElevatedButton(
             onPressed: () {
