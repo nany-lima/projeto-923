@@ -4,6 +4,7 @@ import 'tela_linguagens.dart';
 import 'tela_humanas.dart';
 import 'tela_matematica.dart';
 import 'tela_natureza.dart';
+import 'perfil.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -75,7 +76,10 @@ class TelaInicial extends StatelessWidget {
                     color: Color(0xFFBDE0FE),
                   ),
                   onPressed: () {
-                    print("Botão de Perfil clicado!");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Perfil()),
+                    );
                   },
                 ),
               ),

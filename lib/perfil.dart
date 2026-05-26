@@ -12,30 +12,56 @@ class _Perfil extends State<Perfil> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color(0xFF64C0F1)
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-          padding: const EdgeInsets.all(5),
-      child: Stack(
-      children: [
-        Column(
+          padding: const EdgeInsets.all(23),
+      child: Column(
         children: [
-          SizedBox(height: 50),
-          Center(
-            child: CircleAvatar(
-              radius: 105,
-              backgroundColor: Color(0xFF959494),
-              child: CircleAvatar(
-                radius: 100,
-                backgroundColor: Color(0xFFD9D4D4),
-                child: Icon(
-                  Icons.person,
-                  size: 150,
-                  color: Color(0xFFA9A9A9),
+          SizedBox(height: 10),
+          Stack(
+            children: [
+              Center(
+                child: CircleAvatar(
+                  radius: 105,
+                  backgroundColor: Color(0xFF84D4FD),
+                  child: CircleAvatar(
+                    radius: 100,
+                    backgroundColor: Color(0xFFC9EDFF),
+                    child: Icon(
+                      Icons.person,
+                      size: 150,
+                      color: Color(0xFF94D9FB),
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
+              Positioned(
+                bottom: 1,
+                right: 90,
+                child: ElevatedButton(
+                  onPressed: () {
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF4DC0FD),
+                    padding: EdgeInsets.symmetric(horizontal: 5, vertical: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    elevation: 4,
+                  ),
+                  child: Icon(
+                    Icons.create,
+                    size: 18,
+                    color: Colors.black,
+                  ),
+                ),
 
+              )
+            ]
+          ),
           SizedBox(height: 30),
             Row(
               children: [
@@ -43,7 +69,7 @@ class _Perfil extends State<Perfil> {
                 Icon(
                     Icons.person,
                     size: 40,
-                    color: Color(0xFFC0BFBF)
+                    color: Color(0xFFB6E5FD)
                 ),
                 const SizedBox(width: 10),
                 Text(
@@ -64,7 +90,7 @@ class _Perfil extends State<Perfil> {
                 Icon(
                     Icons.phone,
                     size: 40,
-                    color: Color(0xFFC0BFBF)
+                    color: Color(0xFFB6E5FD)
                 ),
                 const SizedBox(width: 10),
                 Text(
@@ -85,7 +111,7 @@ class _Perfil extends State<Perfil> {
                 Icon(
                     Icons.email,
                     size: 40,
-                    color: Color(0xFFC0BFBF)
+                    color: Color(0xFFB6E5FD)
                 ),
                 const SizedBox(width: 10),
                 Text(
@@ -103,7 +129,7 @@ class _Perfil extends State<Perfil> {
             onPressed: () {
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF7F7F7F),
+              backgroundColor: Color(0xFF5DC7FF),
               foregroundColor: Colors.black,
               padding: EdgeInsets.symmetric(horizontal: 50, vertical: 5),
 
@@ -129,7 +155,7 @@ class _Perfil extends State<Perfil> {
           Container(
             width: 380,
             height: 50,
-            color: Color(0xFFC0BFBF),
+            color: Color(0xFFB7E6FD),
             child:Center(child: Text(
                 'Pontuação Atual',
                 style :GoogleFonts.inika(
@@ -142,7 +168,7 @@ class _Perfil extends State<Perfil> {
           const SizedBox(height: 20),
           Row(
             children: [
-              const SizedBox(width: 32),
+
               Container(
                 width: 160,
                 height: 100,
@@ -218,7 +244,6 @@ class _Perfil extends State<Perfil> {
           const SizedBox(height: 10),
           Row(
             children: [
-              const SizedBox(width: 32),
               Container(
                 width: 160,
                 height: 100,
@@ -289,53 +314,8 @@ class _Perfil extends State<Perfil> {
             ],
           ),
           const SizedBox(height: 15),
-          ElevatedButton(
-            onPressed: () {
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF7F7F7F),
-              foregroundColor: Colors.black,
-              padding: EdgeInsets.symmetric(horizontal: 60, vertical: 5),
-
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-            ),
-            child: Text(
-                'Voltar',
-                style: GoogleFonts.inika(
-                  fontSize: 20,
-                )
-            ),
-          ),
-          const SizedBox(height: 30)
         ]
       ),
-
-          Positioned(
-            bottom: 685,
-            right: 115,
-            child: ElevatedButton(
-            onPressed: () {
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0xFF7F7F7F),
-              padding: EdgeInsets.symmetric(horizontal: 5, vertical: 15),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-              ),
-              elevation: 4,
-            ),
-            child: Icon(
-              Icons.create,
-              size: 18,
-              color: Colors.black,
-              ),
-            ),
-
-          )
-        ]
-      )
       )
     );
   }

@@ -12,7 +12,7 @@ class _telaNatureza extends State<TelaNatureza> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0XFFD0FFEC),
+      backgroundColor: Color(0XFFD0FFEC),
       body: Column(
         children: [
           Align(
@@ -25,10 +25,10 @@ class _telaNatureza extends State<TelaNatureza> {
                 alignment: Alignment.centerLeft,
 
                 decoration: BoxDecoration(
-                  color: const Color(0xFF79AD8E),
+                  color: const Color(0xFF6ECF96),
                   borderRadius: BorderRadius.circular(5),
                   border: Border.all(
-                    color: Colors.white70,
+                    color: Color(0xFF5ABA74),
                     width: 3,
                   ),
                 ),
@@ -62,9 +62,9 @@ class _telaNatureza extends State<TelaNatureza> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF79AD8E),
+                  backgroundColor: Color(0xFF6ECF96),
                   side: const BorderSide(
-                    color: Colors.white,
+                    color: Color(0xFF5ABA74),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -94,9 +94,9 @@ class _telaNatureza extends State<TelaNatureza> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF79AD8E),
+                  backgroundColor: Color(0xFF6ECF96),
                   side: const BorderSide(
-                    color: Colors.white,
+                    color: Color(0xFF5ABA74),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -126,9 +126,9 @@ class _telaNatureza extends State<TelaNatureza> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF79AD8E),
+                  backgroundColor: Color(0xFF6ECF96),
                   side: const BorderSide(
-                    color: Colors.white,
+                    color: Color(0xFF5ABA74),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(

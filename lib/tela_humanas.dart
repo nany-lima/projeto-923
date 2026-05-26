@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class TelaHumanas extends StatefulWidget {
  const TelaHumanas({super.key});
 
@@ -13,7 +12,7 @@ class _TelaHumanas extends State<TelaHumanas> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFDFBFFD),
+      backgroundColor: Color(0xFFE7CDFF),
       body: Column(
         children: [
           Align(

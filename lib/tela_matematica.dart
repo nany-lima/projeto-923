@@ -56,10 +56,6 @@ class _TelaMatematica extends State<TelaMatematica> {
                   style: TextStyle(fontSize: 25, color: Colors.white),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => QuestoesM()),
-                  );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFFFA477),
