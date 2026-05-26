@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'questoes_matematica.dart';
+import 'questoes_m.dart';
 
 class TelaMatematica extends StatefulWidget {
   const TelaMatematica({super.key});

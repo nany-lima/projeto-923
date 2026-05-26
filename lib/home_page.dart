@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'tela_linguagens.dart';
 import 'tela_humanas.dart';
 import 'tela_matematica.dart';
-import 'tela_ciencias.dart';
+import 'tela_natureza.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
