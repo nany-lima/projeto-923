@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'questoes_m.dart';
+import 'questoes_matematica.dart';
 
 class TelaMatematica extends StatefulWidget {
   const TelaMatematica({super.key});
 
   @override
-  State<TelaMatematica> createState() => _telaMatematica();
+  State<TelaMatematica> createState() => _TelaMatematica();
 }
 
-class _telaMatematica extends State<TelaMatematica> {
+class _TelaMatematica extends State<TelaMatematica> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _telaMatematica extends State<TelaMatematica> {
                   color: const Color(0xFFFFA477),
                   borderRadius: BorderRadius.circular(5),
                   border: Border.all(
-                    color: const Color(0xFFFFEDE4),
+                    color: const Color(0xFFFF975F),
                     width: 3,
                   ),
                 ),
@@ -56,13 +56,16 @@ class _telaMatematica extends State<TelaMatematica> {
                   style: TextStyle(fontSize: 25, color: Colors.white),
                 ),
                 onPressed: () {
-                  print("Botão clicado!");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => QuestoesM()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFFFA477),
                   foregroundColor: Colors.white,
                   side: const BorderSide(
-                    color: Colors.white70,
+                    color: Color(0xFFFF975F),
                     width: 3.0,
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 80, vertical: 30),

@@ -7,7 +7,7 @@ class TelaLinguagens extends StatelessWidget {
  @override
  Widget build(BuildContext context) {
    return Scaffold(
-     backgroundColor: const Color(0xFFFE9DE1),
+     backgroundColor: const Color(0xFFFDB4E8),
      body: Column(
        children: [
          Align(
@@ -22,7 +22,7 @@ class TelaLinguagens extends StatelessWidget {
                  color: const Color(0xFFFD79D5),
                  borderRadius: BorderRadius.circular(5),
                  border: Border.all(
-                   color: const Color(0xFFFDD6F1), 
+                   color: const Color(0xFFFF59C8),
                    width: 3,
                  ),
                ),
@@ -53,9 +53,9 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), 
+                 backgroundColor: Color(0xFFFD79D5),
                  side: const BorderSide(
-                   color: Colors.white70,
+                   color: Color(0xFFFF59C8),
                    width: 3.0,
                  ),
                  shape: RoundedRectangleBorder(
@@ -82,9 +82,9 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), 
+                 backgroundColor: Color(0xFFFD79D5),
                  side: const BorderSide(
-                   color: Colors.white70,
+                   color: Color(0xFFFF59C8),
                    width: 3.0,
                  ),
                  shape: RoundedRectangleBorder(
@@ -111,9 +111,9 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), 
+                 backgroundColor: Color(0xFFFD79D5),
                  side: const BorderSide(
-                   color: Colors.white70,
+                   color: Color(0xFFFF59C8),
                    width: 3.0,
                  ),
                  shape: RoundedRectangleBorder(
@@ -140,9 +140,9 @@ class TelaLinguagens extends StatelessWidget {
                  style: TextStyle(fontSize: 25, color: Colors.white),
                ),
                style: ElevatedButton.styleFrom(
-                 backgroundColor: Color(0xFFFF59C8), 
+                 backgroundColor: Color(0xFFFD79D5),
                  side: const BorderSide(
-                   color: Colors.white70,
+                   color: Color(0xFFFF59C8),
                    width: 3.0,
                  ),
                  shape: RoundedRectangleBorder(

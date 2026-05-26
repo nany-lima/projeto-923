@@ -5,19 +5,15 @@ import 'package:google_fonts/google_fonts.dart';
 class TelaHumanas extends StatefulWidget {
  const TelaHumanas({super.key});
 
-
  @override
- State<TelaHumanas> createState() => _telaHumanas();
+ State<TelaHumanas> createState() => _TelaHumanas();
 }
-
-
-class _telaHumanas extends State<TelaHumanas> {
-
+class _TelaHumanas extends State<TelaHumanas> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0XFFE4D8FF),
+      backgroundColor: Color(0xFFDFBFFD),
       body: Column(
         children: [
           Align(
@@ -29,10 +25,10 @@ class _telaHumanas extends State<TelaHumanas> {
                     horizontal: 30, vertical: 10),
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDBAFF8),
+                  color: const Color(0xFFD396FB),
                   borderRadius: BorderRadius.circular(5),
                   border: Border.all(
-                    color: Colors.white70,
+                    color: Color(0xFFCC7FFB),
                     width: 3,
                   ),
                 ),
@@ -69,9 +65,9 @@ class _telaHumanas extends State<TelaHumanas> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFDBAFF8),
+                  backgroundColor: Color(0xFFD396FB),
                   side: const BorderSide(
-                    color: Colors.white70,
+                    color: Color(0xFFCC7FFB),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -103,9 +99,9 @@ class _telaHumanas extends State<TelaHumanas> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFDBAFF8),
+                  backgroundColor: Color(0xFFD396FB),
                   side: const BorderSide(
-                    color: Colors.white70,
+                    color: Color(0xFFCC7FFB),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -137,9 +133,9 @@ class _telaHumanas extends State<TelaHumanas> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFDBAFF8),
+                  backgroundColor: Color(0xFFD396FB),
                   side: const BorderSide(
-                    color: Colors.white70,
+                    color: Color(0xFFCC7FFB),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -169,9 +165,9 @@ class _telaHumanas extends State<TelaHumanas> {
 
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFDBAFF8),
+                  backgroundColor: Color(0xFFD396FB),
                   side: const BorderSide(
-                    color: Colors.white70,
+                    color: Color(0xFFCC7FFB),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(

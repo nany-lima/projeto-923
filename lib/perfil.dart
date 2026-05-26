@@ -5,10 +5,10 @@ class Perfil extends StatefulWidget {
   const Perfil({super.key});
 
   @override
-  State<Perfil> createState() => _perfil();
+  State<Perfil> createState() => _Perfil();
 }
 
-class _perfil extends State<Perfil> {
+class _Perfil extends State<Perfil> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,15 +100,7 @@ class _perfil extends State<Perfil> {
           ),
           const SizedBox(height: 30),
           ElevatedButton(
-            child: Text(
-                'Editar perfil',
-                style: GoogleFonts.inika(
-                  fontSize: 20,
-                )
-            ),
-
             onPressed: () {
-              print("Botão clicado!");
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Color(0xFF7F7F7F),
@@ -118,6 +110,12 @@ class _perfil extends State<Perfil> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
+            ),
+            child: Text(
+                'Editar perfil',
+                style: GoogleFonts.inika(
+                  fontSize: 20,
+                )
             ),
           ),
           const SizedBox(height: 20),
@@ -292,15 +290,7 @@ class _perfil extends State<Perfil> {
           ),
           const SizedBox(height: 15),
           ElevatedButton(
-            child: Text(
-                'Voltar',
-                style: GoogleFonts.inika(
-                  fontSize: 20,
-                )
-            ),
-
             onPressed: () {
-              print("Botão clicado!");
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Color(0xFF7F7F7F),
@@ -310,6 +300,12 @@ class _perfil extends State<Perfil> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
+            ),
+            child: Text(
+                'Voltar',
+                style: GoogleFonts.inika(
+                  fontSize: 20,
+                )
             ),
           ),
           const SizedBox(height: 30)
@@ -321,7 +317,6 @@ class _perfil extends State<Perfil> {
             right: 115,
             child: ElevatedButton(
             onPressed: () {
-              print("Botão clicado!");
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Color(0xFF7F7F7F),
