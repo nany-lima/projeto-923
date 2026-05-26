@@ -76,10 +76,6 @@ class TelaInicial extends StatelessWidget {
                     color: Color(0xFFBDE0FE),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Perfil()),
-                    );
                   },
                 ),
               ),
