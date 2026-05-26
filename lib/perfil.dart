@@ -14,7 +14,7 @@ class _perfil extends State<Perfil> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-          padding: const EdgeInsets.all(0),
+          padding: const EdgeInsets.all(5),
       child: Stack(
       children: [
         Column(
