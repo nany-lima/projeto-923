@@ -17,7 +17,7 @@ class _Perfil extends State<Perfil> {
       ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-          padding: const EdgeInsets.all(23),
+          padding: EdgeInsets.all(23),
       child: Column(
         children: [
           SizedBox(height: 10),
@@ -65,13 +65,13 @@ class _Perfil extends State<Perfil> {
           SizedBox(height: 30),
             Row(
               children: [
-                const SizedBox(width: 80),
+                SizedBox(width: 80),
                 Icon(
                     Icons.person,
                     size: 40,
                     color: Color(0xFFB6E5FD)
                 ),
-                const SizedBox(width: 10),
+                SizedBox(width: 10),
                 Text(
                  'Nome de usuário',
                    style: GoogleFonts.inika(
@@ -86,13 +86,13 @@ class _Perfil extends State<Perfil> {
           SizedBox(height: 20),
           Row(
               children: [
-                const SizedBox(width: 80),
+                SizedBox(width: 80),
                 Icon(
                     Icons.phone,
                     size: 40,
                     color: Color(0xFFB6E5FD)
                 ),
-                const SizedBox(width: 10),
+                SizedBox(width: 10),
                 Text(
                     'Telefone',
                     style: GoogleFonts.inika(
@@ -107,13 +107,13 @@ class _Perfil extends State<Perfil> {
           SizedBox(height: 20),
           Row(
               children: [
-                const SizedBox(width: 80),
+                SizedBox(width: 80),
                 Icon(
                     Icons.email,
                     size: 40,
                     color: Color(0xFFB6E5FD)
                 ),
-                const SizedBox(width: 10),
+                SizedBox(width: 10),
                 Text(
                     'E-mail',
                     style: GoogleFonts.inika(
@@ -124,7 +124,7 @@ class _Perfil extends State<Perfil> {
 
               ]
           ),
-          const SizedBox(height: 30),
+          SizedBox(height: 30),
           ElevatedButton(
             onPressed: () {
             },
@@ -144,14 +144,14 @@ class _Perfil extends State<Perfil> {
                 )
             ),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           Divider(
             color: Colors.black,
             thickness: 2,
             indent: 10,
             endIndent: 10,
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           Container(
             width: 380,
             height: 50,
@@ -165,7 +165,7 @@ class _Perfil extends State<Perfil> {
             ),
             )
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           Row(
             children: [
 
@@ -183,7 +183,7 @@ class _Perfil extends State<Perfil> {
                 ),
                 child: Column(
                   children:[
-                    const SizedBox(height: 15),
+                    SizedBox(height: 15),
                     Text(
                       'Linguagens',
                       style: GoogleFonts.chewy(
@@ -202,7 +202,7 @@ class _Perfil extends State<Perfil> {
                   ],
                 ),
               ),
-              const SizedBox(width: 15),
+              SizedBox(width: 15),
               Container(
                 width: 160,
                 height: 100,
@@ -217,7 +217,7 @@ class _Perfil extends State<Perfil> {
                 ),
                 child: Column(
                   children:[
-                    const SizedBox(height: 15),
+                    SizedBox(height: 15),
                     Text(
                         'Humanas',
                         style: GoogleFonts.chewy(
@@ -241,14 +241,14 @@ class _Perfil extends State<Perfil> {
 
           ),
 
-          const SizedBox(height: 10),
+          SizedBox(height: 10),
           Row(
             children: [
               Container(
                 width: 160,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFFB895),
+                  color: Color(0xFFFFB895),
                   borderRadius: BorderRadius.circular(25),
                   border: Border.all(
                     color: Color(0xFFC48854),

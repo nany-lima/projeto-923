@@ -18,14 +18,14 @@ class _QuestoesM extends State<QuestoesM> {
             'Questões - Matemática',
              style: GoogleFonts.chewy(
                fontSize: 30,
-               color: Colors.white
+               color: Colors.black
              ),
         ),
           centerTitle: true,
-          backgroundColor: const Color(0xFFFFA477)
+          backgroundColor: Color(0xFFFFA477)
       ),
         body: SingleChildScrollView(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           child: Column(
             children: [
               Text('1. Um mapa de uma cidade é desenhado na escala 1:20.000. Se a distância entre dois pontos turísticos nesse mapa é de 15 cm, qual é a distância real entre esses dois pontos, em quilômetros?',

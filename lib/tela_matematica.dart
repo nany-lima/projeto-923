@@ -13,23 +13,21 @@ class _TelaMatematica extends State<TelaMatematica> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFDBB7),
+      backgroundColor: Color(0xFFFFDBB7),
       body: Center(
+
       child: Column(
         children: [
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 14.0),
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 30, vertical: 10),
-                alignment: Alignment.centerLeft,
+          SizedBox(height: 16),
+              Container(
+                width: 390,
+                height: 76,
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 decoration: BoxDecoration(
-                  color: const Color(0xFFFFA477),
+                  color: Color(0xFFFFA477),
                   borderRadius: BorderRadius.circular(5),
                   border: Border.all(
-                    color: const Color(0xFFFF975F),
+                    color: Color(0xFFFF975F),
                     width: 3,
                   ),
                 ),
@@ -41,17 +39,15 @@ class _TelaMatematica extends State<TelaMatematica> {
                   ),
                 ),
               ),
-            ),
-          ),
 
-              const SizedBox(height: 40),
+              SizedBox(height: 40),
               ElevatedButton.icon(
-                icon: const Icon(
+                icon: Icon(
                     Icons.calculate,
                     color: Colors.white,
                     size: 30
                 ),
-                label: const Text(
+                label: Text(
                   'Matemática',
                   style: TextStyle(fontSize: 25, color: Colors.white),
                 ),
@@ -60,7 +56,7 @@ class _TelaMatematica extends State<TelaMatematica> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFFFA477),
                   foregroundColor: Colors.white,
-                  side: const BorderSide(
+                  side: BorderSide(
                     color: Color(0xFFFF975F),
                     width: 3.0,
                   ),
