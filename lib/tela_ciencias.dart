@@ -1,19 +1,18 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-
-class TelaHumanas extends StatefulWidget {
- const TelaHumanas({super.key});
-
- @override
- State<TelaHumanas> createState() => _TelaHumanas();
-}
-class _TelaHumanas extends State<TelaHumanas> {
+import 'package:flutter/material.dart'; 
+import 'package:google_fonts/google_fonts.dart'; 
+class TelaNatureza extends StatefulWidget { 
+ const TelaNatureza({super.key}); 
+ 
+ @override 
+ State<TelaNatureza> createState() => _telaNatureza(); 
+} 
+ 
+class _telaNatureza extends State<TelaNatureza> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFDFBFFD),
+      backgroundColor: Color(0xFFD0FFEC),
       body: Column(
         children: [
           Align(
@@ -24,11 +23,12 @@ class _TelaHumanas extends State<TelaHumanas> {
                 padding: const EdgeInsets.symmetric(
                     horizontal: 30, vertical: 10),
                 alignment: Alignment.centerLeft,
+
                 decoration: BoxDecoration(
-                  color: const Color(0xFFD396FB),
+                  color: const Color(0xFF55B890),
                   borderRadius: BorderRadius.circular(5),
                   border: Border.all(
-                    color: Color(0xFFCC7FFB),
+                    color: Color(0xFF409E78),
                     width: 3,
                   ),
                 ),
@@ -42,9 +42,7 @@ class _TelaHumanas extends State<TelaHumanas> {
               ),
             ),
           ),
-
-          const SizedBox(height: 40),
-
+          const SizedBox (height: 40),
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
@@ -53,21 +51,20 @@ class _TelaHumanas extends State<TelaHumanas> {
               height: 100,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  print("Clicou em História!");
+                  print("Clicou em Biologia");
                 },
-                icon: const Icon(Icons.museum, color: Colors.white,
+                icon: const Icon(Icons.eco, color: Colors.white,
                     size: 30),
                 label: Text(
-                  'História',
+                  'Biologia',
                   style: TextStyle(fontSize: 25, color:
                   Colors.white),
 
-
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFD396FB),
+                  backgroundColor: Color(0xFF55B890),
                   side: const BorderSide(
-                    color: Color(0xFFCC7FFB),
+                    color: Color(0xFF409E78),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -79,7 +76,6 @@ class _TelaHumanas extends State<TelaHumanas> {
           ),
           const SizedBox(height: 20),
 
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: SizedBox(
@@ -87,21 +83,20 @@ class _TelaHumanas extends State<TelaHumanas> {
               height: 100,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  print("Clicou em Geografia");
+                  print("Clicou em Física");
                 },
-                icon: const Icon(Icons.public, color: Colors.white,
+                icon: const Icon(Icons.bolt, color: Colors.white,
                     size: 35),
                 label: Text(
-                  'Geografia',
+                  'Física',
                   style: TextStyle(fontSize: 25, color:
                   Colors.white),
 
-
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFD396FB),
+                  backgroundColor: Color(0xFF55B890),
                   side: const BorderSide(
-                    color: Color(0xFFCC7FFB),
+                    color: Color(0xFF409E78),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -113,7 +108,6 @@ class _TelaHumanas extends State<TelaHumanas> {
           ),
           const SizedBox(height: 20),
 
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: SizedBox(
@@ -121,53 +115,20 @@ class _TelaHumanas extends State<TelaHumanas> {
               height: 100,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  print("Clicou em Filosofia");
+                  print("Clicou em Química");
                 },
-                icon: const Icon(Icons.psychology, color: Colors.white,
+                icon: const Icon(Icons.science, color: Colors.white,
                     size: 30),
                 label: Text(
-                  'Filosofia',
+                  'Química',
                   style: TextStyle(fontSize: 25, color:
                   Colors.white),
 
-
                 ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFD396FB),
+                  backgroundColor: Color(0xFF55B890),
                   side: const BorderSide(
-                    color: Color(0xFFCC7FFB),
-                    width: 3.0,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30.0),
-            child: SizedBox(
-              width: double.infinity,
-              height: 100,
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  print("Clicou em Sociologia");
-                },
-                icon: const Icon(Icons.group, color: Colors.white,
-                    size: 30),
-                label: Text(
-                  'Sociologia',
-                  style: TextStyle(fontSize: 25, color:
-                  Colors.white),
-
-
-                ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFD396FB),
-                  side: const BorderSide(
-                    color: Color(0xFFCC7FFB),
+                    color: Color(0xFF409E78),
                     width: 3.0,
                   ),
                   shape: RoundedRectangleBorder(
@@ -184,4 +145,3 @@ class _TelaHumanas extends State<TelaHumanas> {
     );
   }
 }
-
