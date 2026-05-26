@@ -5,10 +5,10 @@ class QuestoesM extends StatefulWidget {
   const QuestoesM({super.key});
 
   @override
-  State<QuestoesM> createState() => _questoesM();
+  State<QuestoesM> createState() => _QuestoesM();
 }
 
-class _questoesM extends State<QuestoesM> {
+class _QuestoesM extends State<QuestoesM> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +22,7 @@ class _questoesM extends State<QuestoesM> {
              ),
         ),
           centerTitle: true,
-          backgroundColor: const Color(0xFFFFB895)
+          backgroundColor: const Color(0xFFFFA477)
       ),
         body: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -36,16 +36,7 @@ class _questoesM extends State<QuestoesM> {
               SizedBox(height: 20),
 
               ElevatedButton(
-                child: Center(
-                  child: Text(
-                    'A) 0,3 km',
-                    style: GoogleFonts.inika(
-                      fontSize: 15,
-                    )
-                  ),
-                ),
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
@@ -55,11 +46,29 @@ class _questoesM extends State<QuestoesM> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
-                    elevation: 4
+                ),
+                child: Center(
+                  child: Text(
+                      'A) 0,3 km',
+                      style: GoogleFonts.inika(
+                        fontSize: 15,
+                      )
+                  ),
                 ),
               ),
               SizedBox(height: 10),
               ElevatedButton(
+                onPressed: () {
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                ),
                 child: Center(
                   child: Text(
                       'B) 3,0 km',
@@ -68,8 +77,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -79,11 +90,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'C) 30 km',
@@ -92,8 +99,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -103,11 +112,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'D) 300 km',
@@ -116,8 +121,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -127,11 +134,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'E) 3.000 km',
@@ -139,19 +142,6 @@ class _questoesM extends State<QuestoesM> {
                         fontSize: 15,
                       )
                   ),
-                ),
-                onPressed: () {
-                  print("Botão clicado!");
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 4
                 ),
               ),
 
@@ -165,6 +155,17 @@ class _questoesM extends State<QuestoesM> {
               SizedBox(height: 20),
               SizedBox(height: 10),
               ElevatedButton(
+                onPressed: () {
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                ),
                 child: Center(
                   child: Text(
                       'A) 300 litros',
@@ -173,8 +174,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -184,11 +187,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'B) 1.500 litros',
@@ -197,8 +196,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -208,11 +209,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'C) 3.000 litros',
@@ -221,8 +218,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -232,11 +231,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'D) 4.500 litros',
@@ -245,8 +240,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -256,11 +253,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'E) 6.000 litros',
@@ -268,19 +261,6 @@ class _questoesM extends State<QuestoesM> {
                         fontSize: 15,
                       )
                   ),
-                ),
-                onPressed: () {
-                  print("Botão clicado!");
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 4
                 ),
               ),
               SizedBox(height: 30),
@@ -293,6 +273,17 @@ class _questoesM extends State<QuestoesM> {
               SizedBox(height: 20),
               SizedBox(height: 10),
               ElevatedButton(
+                onPressed: () {
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                ),
                 child: Center(
                   child: Text(
                       'A) 7,0',
@@ -301,8 +292,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -312,11 +305,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'B) 8,0',
@@ -325,8 +314,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -336,11 +327,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'C) 8,5',
@@ -349,8 +336,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -360,11 +349,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'D) 9,0',
@@ -373,8 +358,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -384,11 +371,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'E) 9,5',
@@ -396,19 +379,6 @@ class _questoesM extends State<QuestoesM> {
                         fontSize: 15,
                       )
                   ),
-                ),
-                onPressed: () {
-                  print("Botão clicado!");
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 4
                 ),
               ),
               SizedBox(height: 30),
@@ -420,6 +390,17 @@ class _questoesM extends State<QuestoesM> {
               SizedBox(height: 20),
               SizedBox(height: 10),
               ElevatedButton(
+                onPressed: () {
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                ),
                 child: Center(
                   child: Text(
                       'A) RS 196,00',
@@ -428,8 +409,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -439,11 +422,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'B) RS 198,00',
@@ -452,8 +431,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -463,11 +444,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'C) RS 200,00',
@@ -476,8 +453,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -487,11 +466,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'D) RS 202,00',
@@ -500,8 +475,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -511,11 +488,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'E) RS 210,00',
@@ -523,19 +496,6 @@ class _questoesM extends State<QuestoesM> {
                         fontSize: 15,
                       )
                   ),
-                ),
-                onPressed: () {
-                  print("Botão clicado!");
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 4
                 ),
               ),
               SizedBox(height: 30),
@@ -548,6 +508,17 @@ class _questoesM extends State<QuestoesM> {
               SizedBox(height: 20),
               SizedBox(height: 10),
               ElevatedButton(
+                onPressed: () {
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                ),
                 child: Center(
                   child: Text(
                       'A) 20 km',
@@ -556,8 +527,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -567,11 +540,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'B) 25 km',
@@ -580,8 +549,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -591,11 +562,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'C) 28 km',
@@ -604,8 +571,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -615,11 +584,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'D) 30 km',
@@ -628,8 +593,10 @@ class _questoesM extends State<QuestoesM> {
                       )
                   ),
                 ),
+              ),
+              SizedBox(height: 10),
+              ElevatedButton(
                 onPressed: () {
-                  print("Botão clicado!");
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -639,11 +606,7 @@ class _questoesM extends State<QuestoesM> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    elevation: 4
                 ),
-              ),
-              SizedBox(height: 10),
-              ElevatedButton(
                 child: Center(
                   child: Text(
                       'E) 32 km',
@@ -651,19 +614,6 @@ class _questoesM extends State<QuestoesM> {
                         fontSize: 15,
                       )
                   ),
-                ),
-                onPressed: () {
-                  print("Botão clicado!");
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    elevation: 4
                 ),
               ),
             ]
